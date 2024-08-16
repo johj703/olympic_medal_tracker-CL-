@@ -4,7 +4,7 @@ import Input from "./Components/Input";
 import Table from "./Components/Table";
 
 function App() {
-  // 사용하게 될 state들 생성(국가들, 입력하게 될 국가 및 금은동 메달)
+  // 사용하게 될 state들 생성(입력하게 될 국가들 및 금은동 메달)
   const [countries, setCountries] = useState([]);
   const [formData, setFormData] = useState({
     countries: "",
