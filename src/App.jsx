@@ -28,6 +28,17 @@ function App() {
     });
   };
 
+  // 국가 업데이트 함수
+  const updateCountries = () => {
+    const index = countries.findIndex(
+      (countries) => countries.countries === formData.countries
+    );
+
+    if (index == 1) {
+      const miniUpdatedCountries = [...countries];
+    }
+  };
+
   // 국가 삭제 함수
   const deleteCountries = (index) => {
     setCountries(countries.filter((_, i) => i !== index));
@@ -37,7 +48,7 @@ function App() {
     <>
       <Header />
       <form onSubmit={(e) => e.preventDefault()}>
-        <Input addCountries={addCountries} />
+        <Input addCountries={addCountries} updateCountries={updateCountries} />
       </form>
       <Table
         countries={countries}
