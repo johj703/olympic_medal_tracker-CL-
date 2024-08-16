@@ -17,6 +17,10 @@ const Input = () => {
         <p>동메달</p>
         <input />
       </div>
+      <div>
+        <button>국가 추가</button>
+        <button>업데이트</button>
+      </div>
     </>
   );
 };
