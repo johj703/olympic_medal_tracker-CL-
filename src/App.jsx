@@ -12,6 +12,13 @@ function App() {
     bronze: "",
   });
 
+  const addCountries = () => {
+    setCountries([...countries, formData]),
+      setCountries((prevCountries) =>
+        [...prevCountries].sort((a, b) => b.gold - a.gold)
+      );
+  };
+
   return (
     <>
       <Header />
