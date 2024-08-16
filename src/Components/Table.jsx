@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-const Table = ({ countries }) => {
+const Table = ({ countries }, deleteCountries) => {
   return (
     <>
       {countries.length === 0 ? (
@@ -23,7 +23,7 @@ const Table = ({ countries }) => {
                 <th>{countries.silver}</th>
                 <th>{countries.bronze}</th>
                 <td>
-                  <button className="deleteButton">삭제</button>
+                  <button onClick={deleteCountries}>삭제</button>
                 </td>
               </tr>
             ))}
