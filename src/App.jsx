@@ -4,12 +4,12 @@ import Input from "./Components/Input";
 import Table from "./Components/Table";
 
 function App() {
-  const [country, setCountry] = useState([]);
+  const [countries, setCountries] = useState([]);
   return (
     <>
       <Header />
       <Input />
-      <Table country={country} />
+      <Table country={countries} />
     </>
   );
 }
