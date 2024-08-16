@@ -28,7 +28,7 @@ function App() {
     });
   };
 
-  // 국가 수정 함수
+  // 국가 삭제 함수
   const deleteCountries = (index) => {
     setCountries(countries.filter((_, i) => i !== index));
   };
