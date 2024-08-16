@@ -18,11 +18,13 @@ const Table = ({ countries }) => {
           <tbody>
             {countries.map((counties, index) => (
               <tr key={index}>
-                <th>국가명</th>
-                <th>금메달</th>
-                <th>은메달</th>
-                <th>동메달</th>
-                <th>액션</th>
+                <th>{countries.countries}</th>
+                <th>{countries.gold}</th>
+                <th>{countries.silver}</th>
+                <th>{countries.bronze}</th>
+                <td>
+                  <button className="deleteButton">삭제</button>
+                </td>
               </tr>
             ))}
           </tbody>
