@@ -5,7 +5,7 @@ const Table = ({ countries }) => {
       {countries.length === 0 ? (
         <p>아직 추가된 국가가 없습니다. 메달을 추적하세요!</p>
       ) : (
-        <div>
+        <table>
           <thead>
             <tr>
               <th>국가명</th>
@@ -24,7 +24,7 @@ const Table = ({ countries }) => {
               <th>액션</th>
             </tr>
           </tbody>
-        </div>
+        </table>
       )}
     </>
   );
