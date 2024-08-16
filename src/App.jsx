@@ -15,7 +15,9 @@ function App() {
   return (
     <>
       <Header />
-      <Input />
+      <form>
+        <Input />
+      </form>
       <Table countries={countries} />
     </>
   );
