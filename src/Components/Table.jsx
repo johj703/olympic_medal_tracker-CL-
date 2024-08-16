@@ -1,4 +1,5 @@
-const Table = () => {
+/* eslint-disable react/prop-types */
+const Table = ({ country }) => {
   return (
     <>
       {country ? (
