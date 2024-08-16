@@ -29,7 +29,7 @@ function App() {
   return (
     <>
       <Header />
-      <form>
+      <form onSubmit={(e) => e.preventDefault()}>
         <Input addCountries={addCountries} />
       </form>
       <Table countries={countries} addCountries={addCountries} />
