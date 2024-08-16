@@ -1,4 +1,4 @@
-const Input = () => {
+const Input = (addCountries) => {
   return (
     <>
       <div>
@@ -18,7 +18,7 @@ const Input = () => {
         <input />
       </div>
       <div>
-        <button>국가 추가</button>
+        <button onClick={addCountries}>국가 추가</button>
         <button>업데이트</button>
       </div>
     </>
