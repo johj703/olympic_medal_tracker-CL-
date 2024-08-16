@@ -17,15 +17,22 @@ function App() {
       setCountries((prevCountries) =>
         [...prevCountries].sort((a, b) => b.gold - a.gold)
       );
+
+    setFormData({
+      countries: "",
+      gold: "",
+      silver: "",
+      bronze: "",
+    });
   };
 
   return (
     <>
       <Header />
       <form>
-        <Input />
+        <Input addCountries={addCountries} />
       </form>
-      <Table countries={countries} />
+      <Table countries={countries} addCountries={addCountries} />
     </>
   );
 }
