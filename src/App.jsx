@@ -9,7 +9,7 @@ function App() {
     <>
       <Header />
       <Input />
-      <Table country={countries} />
+      <Table countries={countries} />
     </>
   );
 }
