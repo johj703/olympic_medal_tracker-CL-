@@ -26,13 +26,21 @@ function App() {
     });
   };
 
+  const deleteCountries = (index) => {
+    setCountries(countries.filter((_, i) => i !== index));
+  };
+
   return (
     <>
       <Header />
       <form onSubmit={(e) => e.preventDefault()}>
         <Input addCountries={addCountries} />
       </form>
-      <Table countries={countries} addCountries={addCountries} />
+      <Table
+        countries={countries}
+        addCountries={addCountries}
+        deleteCountries={deleteCountries}
+      />
     </>
   );
 }
